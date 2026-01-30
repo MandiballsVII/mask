@@ -56,4 +56,8 @@ public class MoveTest : MonoBehaviour
     {
         rb.linearVelocity = moveInput * moveSpeed;
     }
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+        print("Player en trigger");
+    }
 }
