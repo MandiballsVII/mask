@@ -15,7 +15,7 @@ MonoBehaviour:
   Path: Assets/FMOD_Banks/Desktop/SoundFx.bank
   Name: SoundFx
   StudioPath: bank:/SoundFx
-  lastModified: 639054636576225922
+  lastModified: 639054624116180696
   FileSizes:
   - Name: Desktop
     Value: 4572
@@ -40,13 +40,13 @@ MonoBehaviour:
     Data4: -846328183
   Banks:
   - {fileID: 1457151580863108596}
-  IsStream: 0
+  IsStream: 1
   Is3D: 0
-  IsOneShot: 1
+  IsOneShot: 0
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 0
+  Length: 152000
 --- !u!114 &-2365630849538757948
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -89,7 +89,7 @@ MonoBehaviour:
   Path: Assets/FMOD_Banks/Desktop/Music.bank
   Name: Music
   StudioPath: bank:/Music
-  lastModified: 639054636575861201
+  lastModified: 639054624116110214
   FileSizes:
   - Name: Desktop
     Value: 506
@@ -155,7 +155,7 @@ MonoBehaviour:
   StringsBanks:
   - {fileID: 3794513509569901922}
   cacheVersion: 131858
-  cacheTime: 639054636576225922
+  cacheTime: 639054804888213859
   SerializableEventsDict:
   - key: event:/Music/MainMenu
     index: 0
@@ -192,10 +192,10 @@ MonoBehaviour:
   Path: Assets/FMOD_Banks/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 639054636575708558
+  lastModified: 639054804888203818
   FileSizes:
   - Name: Desktop
-    Value: 2418
+    Value: 2209920
   Exists: 1
 --- !u!114 &2742891932733151619
 MonoBehaviour:
@@ -293,7 +293,7 @@ MonoBehaviour:
   Path: Assets/FMOD_Banks/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 639054636575730305
+  lastModified: 639054804888213859
   FileSizes:
   - Name: Desktop
     Value: 1342

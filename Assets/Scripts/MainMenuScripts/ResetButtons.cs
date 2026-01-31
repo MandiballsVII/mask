@@ -3,11 +3,11 @@ using UnityEngine;
 public class ResetButtons : MonoBehaviour
 {
     public Vector3 buttonScale;
-    public Transform buttonTransform;
+    public RectTransform buttonTransform;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        buttonTransform = GetComponent<Transform>();
+        buttonTransform = GetComponent<RectTransform>();
     }
 
     private void OnEnable()
