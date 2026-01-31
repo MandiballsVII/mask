@@ -16,6 +16,8 @@ public class ButtonDetector1 : MonoBehaviour
 
     private SpriteRenderer spriteRenderer;
 
+    public ArrowHoldDetector arrowHoldDetector;
+
     // ÚNICA fuente de verdad
     private readonly List<GameObject> notasEnTrigger = new();
 
@@ -44,14 +46,29 @@ public class ButtonDetector1 : MonoBehaviour
     {
         spriteRenderer.sprite = buttonDown;
 
-        // MISS
+        // 1 Nota presente
         if (notasEnTrigger.Count == 0)
         {
             ScoreManager.instance?.ResetCombo();
             return;
         }
 
-        // HIT
+        // 2 Arrow activa
+        ArrowData activeArrow = ArrowInputState.activeArrow;
+        if (activeArrow == null)
+        {
+            ScoreManager.instance?.ResetCombo();
+            return;
+        }
+
+        // 3 Dirección mantenida
+        if (!arrowHoldDetector.IsHolding(activeArrow.direction))
+        {
+            ScoreManager.instance?.ResetCombo();
+            return;
+        }
+
+        // HIT VÁLIDO
         GameObject note = notasEnTrigger[0];
 
         SpawnHitFX();
@@ -60,6 +77,7 @@ public class ButtonDetector1 : MonoBehaviour
         notasEnTrigger.Remove(note);
         Destroy(note);
     }
+
 
     private void OnButtonReleased(InputAction.CallbackContext ctx)
     {

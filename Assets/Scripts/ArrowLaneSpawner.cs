@@ -15,8 +15,15 @@ public class ArrowLaneSpawner : MonoBehaviour
         arrow.transform.rotation = GetRotationFromDirection();
         arrow.layer = gameObject.layer;
 
+        // Asignamos la dirección
+        ArrowData data = arrow.AddComponent<ArrowData>();
+        data.direction = lookingDirection;
+
         ArrowMovement movement = arrow.GetComponent<ArrowMovement>();
         movement.Init(travelDuration, centralBox.position.x);
+
+        // Registramos esta arrow como la activa
+        ArrowInputState.SetActiveArrow(data);
     }
 
     Quaternion GetRotationFromDirection()
