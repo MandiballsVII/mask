@@ -612,7 +612,7 @@ ParticleSystem:
     gravityModifier:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 1
+      scalar: 1.1
       minScalar: 0
       maxCurve:
         serializedVersion: 2
@@ -4866,8 +4866,8 @@ ParticleSystemRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1803522931
+  m_SortingLayer: 6
   m_SortingOrder: 0
   m_RenderMode: 0
   m_MeshDistribution: 0
@@ -4920,6 +4920,14 @@ PrefabInstance:
     - target: {fileID: 4292671032416545809, guid: 6d3332eb96d680e448cc64b8eceecd3b, type: 3}
       propertyPath: m_Color.r
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4292671032416545809, guid: 6d3332eb96d680e448cc64b8eceecd3b, type: 3}
+      propertyPath: m_ApplyToSortingLayers.Array.size
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4292671032416545809, guid: 6d3332eb96d680e448cc64b8eceecd3b, type: 3}
+      propertyPath: 'm_ApplyToSortingLayers.Array.data[6]'
+      value: 1803522931
       objectReference: {fileID: 0}
     - target: {fileID: 5214023525617468478, guid: 6d3332eb96d680e448cc64b8eceecd3b, type: 3}
       propertyPath: m_LocalPosition.x

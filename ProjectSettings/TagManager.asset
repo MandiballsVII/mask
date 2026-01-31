@@ -58,5 +58,8 @@ TagManager:
   - name: BoxGameplay
     uniqueID: 3776090687
     locked: 0
+  - name: FX
+    uniqueID: 1803522931
+    locked: 0
   m_RenderingLayers:
   - Default
