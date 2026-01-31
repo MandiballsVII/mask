@@ -1190,7 +1190,7 @@ GameObject:
   m_Component:
   - component: {fileID: 731415805}
   - component: {fileID: 731415806}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Spawner (1)
   m_TagString: Untagged
   m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
@@ -1366,22 +1366,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Button_B
       objectReference: {fileID: 0}
-    - target: {fileID: 7092011137768192989, guid: 8ff80cf8bb4cebb448bdfc8e0f2ae207, type: 3}
-      propertyPath: buttonUp
-      value: 
-      objectReference: {fileID: 21300000, guid: 2da1529112ab12743b413f62dfbdf36c, type: 3}
-    - target: {fileID: 7092011137768192989, guid: 8ff80cf8bb4cebb448bdfc8e0f2ae207, type: 3}
-      propertyPath: buttonDown
-      value: 
-      objectReference: {fileID: 21300000, guid: efb7af3b8f47b424babd5b870543db00, type: 3}
-    - target: {fileID: 7092011137768192989, guid: 8ff80cf8bb4cebb448bdfc8e0f2ae207, type: 3}
-      propertyPath: hitFxPrefab
-      value: 
-      objectReference: {fileID: 5342148506650618960, guid: a2131bbf9107003458d4b7734b5e31d5, type: 3}
-    - target: {fileID: 7092011137768192989, guid: 8ff80cf8bb4cebb448bdfc8e0f2ae207, type: 3}
-      propertyPath: buttonAction
-      value: 
-      objectReference: {fileID: 490963611402475307, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1449,7 +1433,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1000804077}
   - component: {fileID: 1000804078}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Spawner
   m_TagString: Untagged
   m_Icon: {fileID: -5487077368411116049, guid: 0000000000000000d000000000000000, type: 0}
@@ -1498,22 +1482,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Button_X
       objectReference: {fileID: 0}
-    - target: {fileID: 4588790902292460407, guid: 0539b577dd9e98e4e94ddb1dfb84d40b, type: 3}
-      propertyPath: buttonUp
-      value: 
-      objectReference: {fileID: 21300000, guid: 2da1529112ab12743b413f62dfbdf36c, type: 3}
-    - target: {fileID: 4588790902292460407, guid: 0539b577dd9e98e4e94ddb1dfb84d40b, type: 3}
-      propertyPath: buttonDown
-      value: 
-      objectReference: {fileID: 21300000, guid: efb7af3b8f47b424babd5b870543db00, type: 3}
-    - target: {fileID: 4588790902292460407, guid: 0539b577dd9e98e4e94ddb1dfb84d40b, type: 3}
-      propertyPath: hitFxPrefab
-      value: 
-      objectReference: {fileID: 8499848406347160708, guid: a9f946be04bafb4439d4259c8318f9da, type: 3}
-    - target: {fileID: 4588790902292460407, guid: 0539b577dd9e98e4e94ddb1dfb84d40b, type: 3}
-      propertyPath: buttonAction
-      value: 
-      objectReference: {fileID: 567283098938003582, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
     - target: {fileID: 7655829246834983456, guid: 0539b577dd9e98e4e94ddb1dfb84d40b, type: 3}
       propertyPath: m_LocalPosition.x
       value: 4
@@ -1575,30 +1543,6 @@ PrefabInstance:
     - target: {fileID: 10277720549820354, guid: ac94aab5a50332945b54ed2ec7e8ba26, type: 3}
       propertyPath: m_Name
       value: Button_Y
-      objectReference: {fileID: 0}
-    - target: {fileID: 3287753293423856634, guid: ac94aab5a50332945b54ed2ec7e8ba26, type: 3}
-      propertyPath: buttonUp
-      value: 
-      objectReference: {fileID: 21300000, guid: 2da1529112ab12743b413f62dfbdf36c, type: 3}
-    - target: {fileID: 3287753293423856634, guid: ac94aab5a50332945b54ed2ec7e8ba26, type: 3}
-      propertyPath: buttonDown
-      value: 
-      objectReference: {fileID: 21300000, guid: efb7af3b8f47b424babd5b870543db00, type: 3}
-    - target: {fileID: 3287753293423856634, guid: ac94aab5a50332945b54ed2ec7e8ba26, type: 3}
-      propertyPath: hitFxPrefab
-      value: 
-      objectReference: {fileID: 623697458358805877, guid: 6221932af87b4f7448554e1562e5813c, type: 3}
-    - target: {fileID: 3287753293423856634, guid: ac94aab5a50332945b54ed2ec7e8ba26, type: 3}
-      propertyPath: buttonAction
-      value: 
-      objectReference: {fileID: 5626205593838013743, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
-    - target: {fileID: 7985657509020829388, guid: ac94aab5a50332945b54ed2ec7e8ba26, type: 3}
-      propertyPath: m_Size.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 7985657509020829388, guid: ac94aab5a50332945b54ed2ec7e8ba26, type: 3}
-      propertyPath: m_Offset.y
-      value: -0.25
       objectReference: {fileID: 0}
     - target: {fileID: 8757463521419676428, guid: ac94aab5a50332945b54ed2ec7e8ba26, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1754,7 +1698,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1537223293}
   - component: {fileID: 1537223294}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Spawner (3)
   m_TagString: Untagged
   m_Icon: {fileID: 1206586993520771344, guid: 0000000000000000d000000000000000, type: 0}
@@ -1801,7 +1745,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1641214503}
   - component: {fileID: 1641214504}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Spawner (2)
   m_TagString: Untagged
   m_Icon: {fileID: -5397416234189338067, guid: 0000000000000000d000000000000000, type: 0}
@@ -1893,22 +1837,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 597066675}
     m_Modifications:
-    - target: {fileID: 3181063340228955735, guid: 19bd506b0497e5249a505678bebfefa6, type: 3}
-      propertyPath: buttonUp
-      value: 
-      objectReference: {fileID: 21300000, guid: 2da1529112ab12743b413f62dfbdf36c, type: 3}
-    - target: {fileID: 3181063340228955735, guid: 19bd506b0497e5249a505678bebfefa6, type: 3}
-      propertyPath: buttonDown
-      value: 
-      objectReference: {fileID: 21300000, guid: efb7af3b8f47b424babd5b870543db00, type: 3}
-    - target: {fileID: 3181063340228955735, guid: 19bd506b0497e5249a505678bebfefa6, type: 3}
-      propertyPath: hitFxPrefab
-      value: 
-      objectReference: {fileID: 6714071861814133112, guid: cd2ac902f8e4407429a27f368ef44a2f, type: 3}
-    - target: {fileID: 3181063340228955735, guid: 19bd506b0497e5249a505678bebfefa6, type: 3}
-      propertyPath: buttonAction
-      value: 
-      objectReference: {fileID: -4111085098983057314, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
     - target: {fileID: 7016811027574228954, guid: 19bd506b0497e5249a505678bebfefa6, type: 3}
       propertyPath: m_Name
       value: Button_A

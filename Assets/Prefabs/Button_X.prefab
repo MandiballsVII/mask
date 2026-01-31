@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 4183576288197510253}
   - component: {fileID: 7611229839328050784}
   - component: {fileID: 4588790902292460407}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Button_X
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -147,8 +147,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 84502e0005ec2824aa4355cb47372d72, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  buttonAction: {fileID: 0}
-  hitFxPrefab: {fileID: 0}
-  notasRango: []
-  buttonUp: {fileID: 0}
-  buttonDown: {fileID: 0}
+  buttonAction: {fileID: 567283098938003582, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+  hitFxPrefab: {fileID: 8499848406347160708, guid: a9f946be04bafb4439d4259c8318f9da, type: 3}
+  buttonUp: {fileID: 21300000, guid: 2da1529112ab12743b413f62dfbdf36c, type: 3}
+  buttonDown: {fileID: 21300000, guid: efb7af3b8f47b424babd5b870543db00, type: 3}

@@ -1,3 +1,4 @@
+using UnityEditor.ShaderGraph;
 using UnityEngine;
 
 public class LaneSpawner : MonoBehaviour
@@ -27,6 +28,8 @@ public class LaneSpawner : MonoBehaviour
 
         // Rotación según dirección
         note.transform.rotation = GetRotationFromDirection();
+
+        note.layer = gameObject.layer;
     }
 
     Quaternion GetRotationFromDirection()

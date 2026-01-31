@@ -16,7 +16,7 @@ public class ButtonDetector1 : MonoBehaviour
 
     private SpriteRenderer spriteRenderer;
 
-    // NOTAS DENTRO DEL TRIGGER (única fuente de verdad)
+    // ÚNICA fuente de verdad
     private readonly List<GameObject> notasEnTrigger = new();
 
     private void Awake()
@@ -44,14 +44,14 @@ public class ButtonDetector1 : MonoBehaviour
     {
         spriteRenderer.sprite = buttonDown;
 
-        // ❌ No hay nota → MISS
+        // MISS
         if (notasEnTrigger.Count == 0)
         {
             ScoreManager.instance?.ResetCombo();
             return;
         }
 
-        // ✅ HIT → usamos la primera nota válida
+        // HIT
         GameObject note = notasEnTrigger[0];
 
         SpawnHitFX();
@@ -73,6 +73,10 @@ public class ButtonDetector1 : MonoBehaviour
         if (!other.CompareTag("Note"))
             return;
 
+        // COMPARACIÓN DE LAYER
+        if (other.gameObject.layer != gameObject.layer)
+            return;
+
         if (!notasEnTrigger.Contains(other.gameObject))
             notasEnTrigger.Add(other.gameObject);
     }
@@ -80,6 +84,9 @@ public class ButtonDetector1 : MonoBehaviour
     private void OnTriggerExit2D(Collider2D other)
     {
         if (!other.CompareTag("Note"))
+            return;
+
+        if (other.gameObject.layer != gameObject.layer)
             return;
 
         notasEnTrigger.Remove(other.gameObject);
