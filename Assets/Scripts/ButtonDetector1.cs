@@ -58,16 +58,26 @@ public class ButtonDetector1 : MonoBehaviour
         GameObject keyHitted = notasRango[0];
         
         float distancia = Vector2.Distance(transform.position, keyHitted.transform.position);
+        
+        if (ScoreManager.instance != null) {
+            if (distancia < 0.15f ) {
 
-        if (distancia < 0.15f )
-        {
-            Debug.Log(message: "Perfect!");
-            ScoreManager.instance.AddScore(500);
+                ScoreManager.instance.AddScore(500);
+                Debug.Log(message: "Perfect!");
 
-        } else if (distancia < 0.35f) {
-            Debug.Log(message: "Good!");
+            } else if (distancia < 0.35f) {
+
+                ScoreManager.instance.AddScore(250);
+                Debug.Log(message: "Good!");
+
+            } else {
+
+                ScoreManager.instance.AddScore(100);
+                Debug.Log(message: "Ok");
+
+            }
         } else {
-            Debug.Log(message: "Ok");
+            Debug.LogError("ERROR! ScoreManager not found.");
         }
 
         Debug.Log(message: "HIT! Golpe con éxito");
