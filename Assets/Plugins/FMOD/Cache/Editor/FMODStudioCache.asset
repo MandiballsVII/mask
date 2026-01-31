@@ -1,5 +1,126 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-5952498440760632828
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/SoundFx.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/FMOD_Banks/Desktop/SoundFx.bank
+  Name: SoundFx
+  StudioPath: bank:/SoundFx
+  lastModified: 639054624116180696
+  FileSizes:
+  - Name: Desktop
+    Value: 4572
+  Exists: 1
+--- !u!114 &-5719642503546753422
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music/MainMenu
+  m_EditorClassIdentifier: 
+  Path: event:/Music/MainMenu
+  Guid:
+    Data1: -128127554
+    Data2: 1096734818
+    Data3: 427918482
+    Data4: -846328183
+  Banks:
+  - {fileID: 1457151580863108596}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-2365630849538757948
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SoundFX/X2
+  m_EditorClassIdentifier: 
+  Path: event:/SoundFX/X2
+  Guid:
+    Data1: -530380182
+    Data2: 1149025112
+    Data3: 167714718
+    Data4: 832056216
+  Banks:
+  - {fileID: -5952498440760632828}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-1762530592638933508
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Music.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/FMOD_Banks/Desktop/Music.bank
+  Name: Music
+  StudioPath: bank:/Music
+  lastModified: 639054624116110214
+  FileSizes:
+  - Name: Desktop
+    Value: 506
+  Exists: 1
+--- !u!114 &-1676164218222293712
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SoundFX/X3
+  m_EditorClassIdentifier: 
+  Path: event:/SoundFX/X3
+  Guid:
+    Data1: 764911919
+    Data2: 1098897036
+    Data3: 254943886
+    Data4: 1069543014
+  Banks:
+  - {fileID: -5952498440760632828}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15,15 +136,47 @@ MonoBehaviour:
   EditorBanks:
   - {fileID: 3794513509569901922}
   - {fileID: 1457151580863108596}
-  EditorEvents: []
+  - {fileID: -1762530592638933508}
+  - {fileID: -5952498440760632828}
+  EditorEvents:
+  - {fileID: -5719642503546753422}
+  - {fileID: 3066516130572655779}
+  - {fileID: 7881353610275899240}
+  - {fileID: 7582951886375921463}
+  - {fileID: -1676164218222293712}
+  - {fileID: 7754849443380482229}
+  - {fileID: -2365630849538757948}
+  - {fileID: 3741819727011164189}
+  - {fileID: 2742891932733151619}
+  - {fileID: 7891635750615802143}
   EditorParameters: []
   MasterBanks:
   - {fileID: 1457151580863108596}
   StringsBanks:
   - {fileID: 3794513509569901922}
   cacheVersion: 131858
-  cacheTime: 639054088812986810
-  SerializableEventsDict: []
+  cacheTime: 639054624116180696
+  SerializableEventsDict:
+  - key: event:/Music/MainMenu
+    index: 0
+  - key: event:/Music/GameplayMusic
+    index: 1
+  - key: event:/SoundFX/InputFailed
+    index: 2
+  - key: event:/SoundFX/LoseCombo
+    index: 3
+  - key: event:/SoundFX/X3
+    index: 4
+  - key: event:/SoundFX/Metronome
+    index: 5
+  - key: event:/SoundFX/X2
+    index: 6
+  - key: event:/SoundFX/X4
+    index: 7
+  - key: event:/SoundFX/ButtonConfirm
+    index: 8
+  - key: event:/SoundFX/X5
+    index: 9
 --- !u!114 &1457151580863108596
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -39,11 +192,92 @@ MonoBehaviour:
   Path: Assets/FMOD_Banks/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 639054088812986810
+  lastModified: 639054624116049947
   FileSizes:
   - Name: Desktop
-    Value: 1074
+    Value: 2418
   Exists: 1
+--- !u!114 &2742891932733151619
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SoundFX/ButtonConfirm
+  m_EditorClassIdentifier: 
+  Path: event:/SoundFX/ButtonConfirm
+  Guid:
+    Data1: 1286295772
+    Data2: 1226060284
+    Data3: -1914738004
+    Data4: 1810619412
+  Banks:
+  - {fileID: -5952498440760632828}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &3066516130572655779
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music/GameplayMusic
+  m_EditorClassIdentifier: 
+  Path: event:/Music/GameplayMusic
+  Guid:
+    Data1: 241774027
+    Data2: 1121208202
+    Data3: -1918488651
+    Data4: -2072594136
+  Banks:
+  - {fileID: 1457151580863108596}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &3741819727011164189
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SoundFX/X4
+  m_EditorClassIdentifier: 
+  Path: event:/SoundFX/X4
+  Guid:
+    Data1: -1554420342
+    Data2: 1278297917
+    Data3: 855589250
+    Data4: -1114891151
+  Banks:
+  - {fileID: -5952498440760632828}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &3794513509569901922
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -59,8 +293,116 @@ MonoBehaviour:
   Path: Assets/FMOD_Banks/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 639054088812986810
+  lastModified: 639054624116069913
   FileSizes:
   - Name: Desktop
-    Value: 724
+    Value: 1342
   Exists: 1
+--- !u!114 &7582951886375921463
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SoundFX/LoseCombo
+  m_EditorClassIdentifier: 
+  Path: event:/SoundFX/LoseCombo
+  Guid:
+    Data1: 695964963
+    Data2: 1254860713
+    Data3: 356659869
+    Data4: 1260262512
+  Banks:
+  - {fileID: -5952498440760632828}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &7754849443380482229
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SoundFX/Metronome
+  m_EditorClassIdentifier: 
+  Path: event:/SoundFX/Metronome
+  Guid:
+    Data1: -183001273
+    Data2: 1076872300
+    Data3: -1118659669
+    Data4: -1767320838
+  Banks:
+  - {fileID: -5952498440760632828}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &7881353610275899240
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SoundFX/InputFailed
+  m_EditorClassIdentifier: 
+  Path: event:/SoundFX/InputFailed
+  Guid:
+    Data1: 539040787
+    Data2: 1177756683
+    Data3: 2132824221
+    Data4: -1840448918
+  Banks:
+  - {fileID: -5952498440760632828}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &7891635750615802143
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SoundFX/X5
+  m_EditorClassIdentifier: 
+  Path: event:/SoundFX/X5
+  Guid:
+    Data1: 2114752511
+    Data2: 1101842258
+    Data3: -1747273546
+    Data4: 1065953425
+  Banks:
+  - {fileID: -5952498440760632828}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
