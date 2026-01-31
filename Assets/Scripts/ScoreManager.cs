@@ -42,6 +42,6 @@ public class ScoreManager : MonoBehaviour
 
     void UpdateInterface() {
         if (scoreText != null) scoreText.text = "Score: " + totalScore;
-        if (comboText != null) comboText.text = "Combo: " + totalScore;
+        if (comboText != null) comboText.text = "Combo: " + actualCombo;
     }
 }
