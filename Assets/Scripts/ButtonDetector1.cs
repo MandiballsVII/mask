@@ -18,7 +18,7 @@ public class ButtonDetector1 : MonoBehaviour
 
     public void OnTriggerStay2D(Collider2D other)
     {
-        if (other.CompareTag("Nota"))
+        if (other.CompareTag("Note"))
         {
             if(!notasRango.Contains(other.gameObject)) {
                 notasRango.Add(other.gameObject);
@@ -34,13 +34,13 @@ public class ButtonDetector1 : MonoBehaviour
     }
 
     public void OnTriggerExit2D(Collider2D other) {
-        if (other.CompareTag("Nota"))
+        if (other.CompareTag("Note"))
         {   
             Debug.Log(message: "Combo missed!");
 
-            ScoreManager.instance.ResetCombo();
-            notasRango.Remove(other.gameObject);
-            Destroy(other.gameObject);
+            //ScoreManager.instance.ResetCombo();
+            //notasRango.Remove(other.gameObject);
+            //Destroy(other.gameObject);
         }   
     }
 
