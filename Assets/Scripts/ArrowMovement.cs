@@ -2,11 +2,16 @@ using UnityEngine;
 
 public class ArrowMovement : MonoBehaviour
 {
-    public float speed = 5f;
+    private float speed;
+
+    public void Init(float travelDuration, float targetX)
+    {
+        float distance = targetX - transform.position.x;
+        speed = distance / travelDuration;
+    }
 
     void Update()
     {
-        transform.position += Vector3.right * speed * Time.deltaTime;
+        transform.Translate(Vector2.right * speed * Time.deltaTime, Space.World);
     }
-
 }

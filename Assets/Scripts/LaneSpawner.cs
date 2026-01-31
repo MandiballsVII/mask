@@ -1,18 +1,19 @@
-using UnityEditor.ShaderGraph;
 using UnityEngine;
 
 public class LaneSpawner : MonoBehaviour
 {
     public GameObject notePrefab;
     public Color color;
-    public lokingDirection lookingDirection;
 
     private float timer;
 
+    public float timeGap;
+
     void Update()
     {
+
         timer += Time.deltaTime;
-        if (timer > 2f)
+        if (timer > timeGap)
         {
             Spawn();
             timer = 0f;
@@ -26,33 +27,8 @@ public class LaneSpawner : MonoBehaviour
         // Color
         note.GetComponent<SpriteRenderer>().color = color;
 
-        // Rotación según dirección
-        note.transform.rotation = GetRotationFromDirection();
-
         note.layer = gameObject.layer;
     }
 
-    Quaternion GetRotationFromDirection()
-    {
-        switch (lookingDirection)
-        {
-            case lokingDirection.Left:
-                return Quaternion.Euler(0, 0, 90);
-
-            case lokingDirection.Up:
-                return Quaternion.Euler(0, 0, 180);
-
-            case lokingDirection.Right:
-                return Quaternion.Euler(0, 0, -90);
-
-            case lokingDirection.Down:
-            default:
-                return Quaternion.identity;
-        }
-    }
-}
-
-public enum lokingDirection
-{
-    Left, Right, Up, Down
+    
 }
