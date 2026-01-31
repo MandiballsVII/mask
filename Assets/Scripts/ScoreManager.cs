@@ -13,7 +13,7 @@ public class ScoreManager : MonoBehaviour
     public TextMeshProUGUI scoreText;
     public TextMeshProUGUI comboText;
 
-    void Awake() {
+    public void Awake() {
         if (instance == null) {
             instance = this;
         } else {
@@ -22,8 +22,9 @@ public class ScoreManager : MonoBehaviour
      
     }
     void UpdateInterface() {
-        if (scoreText != null) scoreText.text = "Score: " + totalScore;
-        if (comboText != null) comboText.text = "Combo: " + actualCombo;
+        scoreText?.SetText("Score: " + totalScore);
+        comboText?.SetText("Combo: x" + actualCombo);
+            
     }
 
     public void AddScore(int pointsBase) {
@@ -37,10 +38,11 @@ public class ScoreManager : MonoBehaviour
                 multiplicator = 1;
             }
 
-            totalScore += (pointsBase * multiplicator);
+            totalScore += pointsBase * multiplicator;
 
-            UpdateInterface();
             Debug.Log(message: $"Puntos: {totalScore} | Combo: {actualCombo} | Multi: x{multiplicator}");
+            UpdateInterface();
+            
         }
 
     public void ResetCombo() {
@@ -50,6 +52,4 @@ public class ScoreManager : MonoBehaviour
         UpdateInterface();
         Debug.Log(message: "Combo lost!");
     }
-
-    
 }
