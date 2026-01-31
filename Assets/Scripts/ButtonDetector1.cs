@@ -1,78 +1,103 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class ButtonDetector1 : MonoBehaviour
 {
-    [Header("Configuración del Input")]
-    public KeyCode teclaAsignada;
-    public KeyCode teclaMando;
+    [Header("Input System")]
+    public InputActionReference buttonAction;
+
+    [Header("FX")]
+    public GameObject hitFxPrefab;
+    private Transform fxSpawnPoint;
+
     public List<GameObject> notasRango = new List<GameObject>();
 
-    public GameObject keyHitted;
-  
-    void Start()
-    {
-        if (teclaAsignada == KeyCode.None) teclaAsignada = KeyCode.A;  
-    } 
+    private SpriteRenderer spriteRenderer;
 
-    public void OnTriggerStay2D(Collider2D other)
+    public Sprite buttonUp;
+    public Sprite buttonDown;
+
+    private GameObject keyHitted;
+
+    private void Awake()
     {
-        if (other.CompareTag("Nota"))
+        spriteRenderer = GetComponent<SpriteRenderer>();
+        fxSpawnPoint = transform;
+    }
+
+    private void OnEnable()
+    {
+        buttonAction.action.Enable();
+        buttonAction.action.performed += OnButtonPressed;
+        buttonAction.action.canceled += OnButtonReleased;
+    }
+
+    private void OnDisable()
+    {
+        buttonAction.action.performed -= OnButtonPressed;
+        buttonAction.action.canceled -= OnButtonReleased;
+        buttonAction.action.Disable();
+    }
+
+    // ===== INPUT =====
+
+    private void OnButtonPressed(InputAction.CallbackContext ctx)
+    {
+        spriteRenderer.sprite = buttonDown;
+
+        if (notasRango.Count == 0)
+            return;
+
+        keyHitted = notasRango[0];
+
+        SpawnHitFX();
+        VerificarGolpe();
+    }
+
+    private void OnButtonReleased(InputAction.CallbackContext ctx)
+    {
+        spriteRenderer.sprite = buttonUp;
+    }
+
+    // ===== TRIGGERS =====
+
+    private void OnTriggerStay2D(Collider2D other)
+    {
+        if (other.CompareTag("Note") && !notasRango.Contains(other.gameObject))
         {
-            if(!notasRango.Contains(other.gameObject)) {
-                notasRango.Add(other.gameObject);
-            }
-
-            if (Input.GetKeyDown(teclaAsignada) || Input.GetKeyDown(teclaMando))
-            {
-                keyHitted = other.gameObject;
-                VerificarGolpe();
-            }
+            notasRango.Add(other.gameObject);
         }
-        Debug.Log(message: "Combo system activated.");
     }
 
-    public void OnTriggerExit2D(Collider2D other) {
-        if (other.CompareTag("Nota"))
-        {   
-            Debug.Log(message: "Combo missed!");
-
-            ScoreManager.instance.ResetCombo();
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.CompareTag("Note"))
+        {
             notasRango.Remove(other.gameObject);
-            Destroy(other.gameObject);
-        }   
+        }
     }
+
+    // ===== FX =====
+
+    private void SpawnHitFX()
+    {
+        if (hitFxPrefab == null)
+            return;
+
+        GameObject effect = Instantiate(hitFxPrefab, fxSpawnPoint.position, Quaternion.identity);
+        Destroy(effect, 1f);
+    }
+
+    // ===== HIT LOGIC =====
 
     public void VerificarGolpe()
     {
         if (keyHitted == null)
             return;
-        
-        float distancia = Vector2.Distance(transform.position, keyHitted.transform.position);
-        
-        if (ScoreManager.instance != null) {
-            if (distancia < 0.2f ) {
 
-                ScoreManager.instance.AddScore(500);
-                Debug.Log(message: "Perfect!");
-
-            } else if (distancia < 0.5f) {
-
-                ScoreManager.instance.AddScore(250);
-                Debug.Log(message: "Good!");
-
-            } else {
-
-                ScoreManager.instance.AddScore(100);
-                Debug.Log(message: "Ok");
-
-            }
-        } else {
-            Debug.LogError("ERROR! ScoreManager not found.");
-        }
-
-        Debug.Log(message: "HIT! Golpe con éxito");
+        // Si ha llegado aquí, es HIT válido
+        ScoreManager.instance?.AddScore(500);
 
         notasRango.Remove(keyHitted);
         Destroy(keyHitted);

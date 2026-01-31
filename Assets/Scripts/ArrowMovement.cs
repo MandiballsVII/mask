@@ -6,7 +6,7 @@ public class ArrowMovement : MonoBehaviour
 
     void Update()
     {
-        transform.Translate(Vector2.right * speed * Time.deltaTime);
+        transform.position += Vector3.right * speed * Time.deltaTime;
     }
 
 }
