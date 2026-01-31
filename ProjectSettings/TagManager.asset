@@ -43,5 +43,20 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: GameplayBG
+    uniqueID: 2346313269
+    locked: 0
+  - name: LineGameplay
+    uniqueID: 4442891
+    locked: 0
+  - name: ButtonShape
+    uniqueID: 213489927
+    locked: 0
+  - name: ButtonLayer
+    uniqueID: 1109851703
+    locked: 0
+  - name: BoxGameplay
+    uniqueID: 3776090687
+    locked: 0
   m_RenderingLayers:
   - Default
