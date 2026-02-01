@@ -17,8 +17,8 @@ public class ArrowLaneSpawner : MonoBehaviour
         arrow.transform.rotation = GetRotationFromDirection();
         arrow.layer = gameObject.layer;
 
-        // Dirección
-        ArrowData data = arrow.AddComponent<ArrowData>();
+        // USAR el ArrowData del prefab
+        ArrowData data = arrow.GetComponent<ArrowData>();
         data.direction = lookingDirection;
 
         ArrowMovement movement = arrow.GetComponent<ArrowMovement>();
@@ -26,6 +26,7 @@ public class ArrowLaneSpawner : MonoBehaviour
 
         ArrowInputState.SetActiveArrow(data);
     }
+
 
     Quaternion GetRotationFromDirection()
     {

@@ -15,11 +15,3 @@ public class ArrowMovement : MonoBehaviour
         transform.Translate(Vector2.right * speed * Time.deltaTime, Space.World);
     }
 }
-public class ArrowData : MonoBehaviour
-{
-    public lookingDirection direction;
-    private void OnDestroy()
-    {
-        ArrowInputState.ClearIfThisArrow(this);
-    }
-}

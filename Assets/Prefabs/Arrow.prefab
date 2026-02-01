@@ -14,6 +14,8 @@ GameObject:
   - component: {fileID: 6829055486974750344}
   - component: {fileID: 1958682043247878949}
   - component: {fileID: 3106220170486680471}
+  - component: {fileID: -6731083307077639739}
+  - component: {fileID: -2309215147911766265}
   m_Layer: 0
   m_Name: Arrow
   m_TagString: Arrow
@@ -198,3 +200,30 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &-6731083307077639739
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5139039270173868834}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a7c7598c651449e4181a31dce8e0e7dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  normalMaterial: {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  activeMaterial: {fileID: 2100000, guid: c3435c9c7e1c7c5438b4a65f160a2281, type: 2}
+--- !u!114 &-2309215147911766265
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5139039270173868834}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d65eb78e76214a3498142a800c9dc5e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  direction: 0
