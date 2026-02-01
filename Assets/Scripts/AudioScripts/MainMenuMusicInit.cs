@@ -6,6 +6,7 @@ public class MainMenuMusicInit : MonoBehaviour
     void Start()
     {
         AudioManager.instance.InitializeMusic(FMOD_Events.instance.MainMenu);
+        Debug.Log("MusicaInicializada, supuestamente");
     }
 
 }

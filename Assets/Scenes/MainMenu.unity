@@ -659,74 +659,74 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <MainMenu>k__BackingField:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: -128127554
+      Data2: 1096734818
+      Data3: 427918482
+      Data4: -846328183
+    Path: event:/Music/MainMenu
   <GameplayMusic>k__BackingField:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: 241774027
+      Data2: 1121208202
+      Data3: -1918488651
+      Data4: -2072594136
+    Path: event:/Music/GameplayMusic
   <ButtonSounds>k__BackingField:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: 1286295772
+      Data2: 1226060284
+      Data3: -1914738004
+      Data4: 1810619412
+    Path: event:/SoundFX/ButtonConfirm
   <X2>k__BackingField:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: -530380182
+      Data2: 1149025112
+      Data3: 167714718
+      Data4: 832056216
+    Path: event:/SoundFX/X2
   <X3>k__BackingField:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: 764911919
+      Data2: 1098897036
+      Data3: 254943886
+      Data4: 1069543014
+    Path: event:/SoundFX/X3
   <X4>k__BackingField:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: -1554420342
+      Data2: 1278297917
+      Data3: 855589250
+      Data4: -1114891151
+    Path: event:/SoundFX/X4
   <X5>k__BackingField:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: 2114752511
+      Data2: 1101842258
+      Data3: -1747273546
+      Data4: 1065953425
+    Path: event:/SoundFX/X5
   <LoseCombo>k__BackingField:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: 695964963
+      Data2: 1254860713
+      Data3: 356659869
+      Data4: 1260262512
+    Path: event:/SoundFX/LoseCombo
   <FailInput>k__BackingField:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: 539040787
+      Data2: 1177756683
+      Data3: 2132824221
+      Data4: -1840448918
+    Path: event:/SoundFX/InputFailed
   <Metronome>k__BackingField:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: -183001273
+      Data2: 1076872300
+      Data3: -1118659669
+      Data4: -1767320838
+    Path: event:/SoundFX/Metronome
 --- !u!1 &317237937
 GameObject:
   m_ObjectHideFlags: 0
@@ -4782,6 +4782,18 @@ MonoBehaviour:
           m_StringArgument: GameplayScene
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 700498777}
+        m_TargetAssemblyTypeName: ButtonManager, Assembly-CSharp
+        m_MethodName: StopMusic
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1433658171
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6054,6 +6066,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1883770570}
+  - component: {fileID: 1883770571}
   m_Layer: 0
   m_Name: MenuManager
   m_TagString: Untagged
@@ -6076,6 +6089,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1883770571
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1883770569}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f40825745e0f6a4db2cadad4bbbaec3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1893929371
 GameObject:
   m_ObjectHideFlags: 0
