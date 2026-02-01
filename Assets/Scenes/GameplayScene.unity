@@ -2257,6 +2257,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ArrowManager
       objectReference: {fileID: 0}
+    - target: {fileID: 4533261102692321296, guid: 9c8907e5b947b0e4bbc5c20db9da6286, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 9007919737847814718, guid: 9c8907e5b947b0e4bbc5c20db9da6286, type: 3}
       propertyPath: 'arrowLanes.Array.data[0]'
       value: 
@@ -3116,10 +3120,11 @@ MonoBehaviour:
   scoreText: {fileID: 1424843130}
   comboText: {fileID: 1360658353}
   gameTime: 145
+  timeToMainMenu: 10
   confetti: {fileID: 1354046298}
   confetti2: {fileID: 2113726298}
   confetti3: {fileID: 1937988042}
-  confetti4: {fileID: 0}
+  confetti4: {fileID: 2065224972}
 --- !u!4 &1812511826
 Transform:
   m_ObjectHideFlags: 0
@@ -3542,6 +3547,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 10940569a6942d748acfbaf3cd71460f, type: 3}
+--- !u!198 &2065224972 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 281934593380600989, guid: 10940569a6942d748acfbaf3cd71460f, type: 3}
+  m_PrefabInstance: {fileID: 2065224971}
+  m_PrefabAsset: {fileID: 0}
 --- !u!198 &2113726298 stripped
 ParticleSystem:
   m_CorrespondingSourceObject: {fileID: 281934593380600989, guid: 10940569a6942d748acfbaf3cd71460f, type: 3}

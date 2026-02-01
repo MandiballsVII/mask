@@ -24,19 +24,24 @@ public class AudioManager : MonoBehaviour
 
     private void Awake()
     {
-        if (instance != null)
+        if (instance != null && instance != this)
         {
-            Debug.LogWarning("Another audio manager was found in this scene!");
-            Destroy(this);
+            Destroy(gameObject);
+            return;
         }
-        else
-        {
-            instance = this;
-        }
+
+        instance = this;
+        DontDestroyOnLoad(gameObject);
 
         masterBus = RuntimeManager.GetBus("bus:/");
         musicBus = RuntimeManager.GetBus("bus:/Music");
         sfxBus = RuntimeManager.GetBus("bus:/SoundFx");
+    }
+
+    private void OnDestroy()
+    {
+        if (instance == this)
+            instance = null;
     }
 
     private void Update()
@@ -44,6 +49,7 @@ public class AudioManager : MonoBehaviour
         masterBus.setVolume(masterVolume);
         musicBus.setVolume(musicVolume);
         sfxBus.setVolume(sfxVolume);
+        print("Audio Manager vive");
     }
 
     public void PlayOneShot(EventReference sound)

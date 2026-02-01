@@ -28,6 +28,7 @@ public class LaneSpawner : MonoBehaviour
         note.GetComponent<SpriteRenderer>().color = color;
 
         note.layer = gameObject.layer;
+        timeGap = Random.Range(0, 5);
     }
 
     

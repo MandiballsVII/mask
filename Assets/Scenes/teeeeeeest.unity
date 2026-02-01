@@ -541,28 +541,7 @@ MonoBehaviour:
       Data3: 0
       Data4: 0
     Path: 
-  <X2>k__BackingField:
-    Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
-  <X3>k__BackingField:
-    Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
-  <X4>k__BackingField:
-    Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
-  <X5>k__BackingField:
+  <NewCombo>k__BackingField:
     Guid:
       Data1: 0
       Data2: 0
@@ -577,13 +556,6 @@ MonoBehaviour:
       Data4: 0
     Path: 
   <FailInput>k__BackingField:
-    Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
-  <Metronome>k__BackingField:
     Guid:
       Data1: 0
       Data2: 0
@@ -2916,7 +2888,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1354193107
 Transform:
   m_ObjectHideFlags: 0

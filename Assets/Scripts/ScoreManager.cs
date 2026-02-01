@@ -34,12 +34,17 @@ public class ScoreManager : MonoBehaviour
     }
     private void Start()
     {
-        AudioManager.instance.InitializeMusic(FMOD_Events.instance.GameplayMusic);
+        if (AudioManager.instance != null)
+        {
+            AudioManager.instance.InitializeMusic(FMOD_Events.instance.GameplayMusic);
+        }
+        else
+        {
+            Debug.LogError("AudioManager NO existe");
+        }
     }
     private void Update()
     {
-        //confetti.Play();
-        print(gameTime);
         gameTime -= Time.deltaTime;
         if(gameTime < 0)
         {
@@ -118,6 +123,14 @@ public class ScoreManager : MonoBehaviour
     }
 
     public void ResetCombo() {
+        if(multiplicator != 1)
+        {
+            AudioManager.instance.PlayOneShot(FMOD_Events.instance.LoseCombo);
+        }
+        else
+        {
+            AudioManager.instance.PlayOneShot(FMOD_Events.instance.FailInput);
+        }
         actualCombo = 0;
         multiplicator = 1;
 
