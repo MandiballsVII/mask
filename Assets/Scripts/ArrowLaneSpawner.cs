@@ -4,25 +4,26 @@ public class ArrowLaneSpawner : MonoBehaviour
 {
     public GameObject arrowPrefab;
     public Color color;
-    public lokingDirection lookingDirection;
+    public lookingDirection lookingDirection;
     public Transform centralBox;
 
     public void SpawnArrow(float travelDuration)
     {
         GameObject arrow = Instantiate(arrowPrefab, transform.position, Quaternion.identity);
 
-        arrow.GetComponent<SpriteRenderer>().color = color;
+        SpriteRenderer sr = arrow.GetComponent<SpriteRenderer>();
+        sr.color = GetColorFromDirection();
+
         arrow.transform.rotation = GetRotationFromDirection();
         arrow.layer = gameObject.layer;
 
-        // Asignamos la dirección
+        // Dirección
         ArrowData data = arrow.AddComponent<ArrowData>();
         data.direction = lookingDirection;
 
         ArrowMovement movement = arrow.GetComponent<ArrowMovement>();
         movement.Init(travelDuration, centralBox.position.x);
 
-        // Registramos esta arrow como la activa
         ArrowInputState.SetActiveArrow(data);
     }
 
@@ -30,15 +31,26 @@ public class ArrowLaneSpawner : MonoBehaviour
     {
         return lookingDirection switch
         {
-            lokingDirection.Left => Quaternion.Euler(0, 0, -90),
-            lokingDirection.Up => Quaternion.Euler(0, 0, 180),
-            lokingDirection.Right => Quaternion.Euler(0, 0, 90),
+            lookingDirection.Left => Quaternion.Euler(0, 0, -90),
+            lookingDirection.Up => Quaternion.Euler(0, 0, 180),
+            lookingDirection.Right => Quaternion.Euler(0, 0, 90),
             _ => Quaternion.identity
+        };
+    }
+    Color GetColorFromDirection()
+    {
+        return lookingDirection switch
+        {
+            lookingDirection.Left => Color.red,
+            lookingDirection.Up => Color.yellow,
+            lookingDirection.Right => Color.magenta,
+            lookingDirection.Down => Color.blue,
+            _ => Color.white
         };
     }
 
 }
-public enum lokingDirection
+public enum lookingDirection
 {
     Left, Right, Up, Down
 }

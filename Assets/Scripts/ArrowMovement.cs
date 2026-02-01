@@ -17,7 +17,7 @@ public class ArrowMovement : MonoBehaviour
 }
 public class ArrowData : MonoBehaviour
 {
-    public lokingDirection direction;
+    public lookingDirection direction;
     private void OnDestroy()
     {
         ArrowInputState.ClearIfThisArrow(this);

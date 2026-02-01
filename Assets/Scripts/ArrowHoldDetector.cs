@@ -8,14 +8,14 @@ public class ArrowHoldDetector : MonoBehaviour
     public InputActionReference up;
     public InputActionReference down;
 
-    public bool IsHolding(lokingDirection direction)
+    public bool IsHolding(lookingDirection direction)
     {
         return direction switch
         {
-            lokingDirection.Left => left.action.IsPressed(),
-            lokingDirection.Right => right.action.IsPressed(),
-            lokingDirection.Up => up.action.IsPressed(),
-            lokingDirection.Down => down.action.IsPressed(),
+            lookingDirection.Left => left.action.IsPressed(),
+            lookingDirection.Right => right.action.IsPressed(),
+            lookingDirection.Up => up.action.IsPressed(),
+            lookingDirection.Down => down.action.IsPressed(),
             _ => false
         };
     }
