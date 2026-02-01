@@ -3,14 +3,17 @@ using UnityEngine.SceneManagement;
 
 public class ButtonManager : MonoBehaviour
 {
-    public void LoadScene(string sceneName)
+    public void LoadLevel(string sceneName)
     {
-        LoadScene(sceneName);
+        SceneManager.LoadScene(sceneName);
     }
 
     public void ExitGame()
     {
         Application.Quit();
-    }
 
+        #if UNITY_EDITOR
+            UnityEditor.EditorApplication.isPlaying = false;
+        #endif 
+    }
 }

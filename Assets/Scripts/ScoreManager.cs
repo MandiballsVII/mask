@@ -8,6 +8,7 @@ public class ScoreManager : MonoBehaviour
     [Header("Actual Score")]
     public int totalScore = 0;
     public int actualCombo = 0;
+
     public int multiplicator = 1;
 
     public TextMeshProUGUI scoreText;
@@ -21,18 +22,12 @@ public class ScoreManager : MonoBehaviour
         }
      
     }
-    void UpdateInterface() {
-        scoreText?.SetText("Score: " + totalScore);
-        comboText?.SetText("Combo: x" + actualCombo);
-            
-    }
-
     public void AddScore(int pointsBase) {
             actualCombo++;
 
-            if (actualCombo > 30) {
+            if (actualCombo >= 20) {
                 multiplicator = 4;
-            } else if (actualCombo > 10) {
+            } else if (actualCombo >= 10) {
                 multiplicator = 2;
             } else {
                 multiplicator = 1;
@@ -44,6 +39,11 @@ public class ScoreManager : MonoBehaviour
             UpdateInterface();
             
         }
+
+    public void UpdateInterface() {
+        scoreText.SetText("Score: {0}", totalScore);
+        comboText.SetText("x{0}", actualCombo);
+    }
 
     public void ResetCombo() {
         actualCombo = 0;
