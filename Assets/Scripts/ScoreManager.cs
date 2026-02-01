@@ -17,6 +17,8 @@ public class ScoreManager : MonoBehaviour
 
     public float gameTime = 3f;
 
+    public float timeToMainMenu = 10f;
+
     public ParticleSystem confetti;
     public ParticleSystem confetti2;
     public ParticleSystem confetti3;
@@ -42,33 +44,39 @@ public class ScoreManager : MonoBehaviour
         if(gameTime < 0)
         {
             PlayEndAnimation();
+            timeToMainMenu -= Time.deltaTime;
+            if(timeToMainMenu < 0)
+            {
+                AudioManager.instance.StopMusic();
+                AudioManager.instance.ChangeScene("MainMenu");
+            }
         }
-        if(gameTime < -10f)
-        {
-            AudioManager.instance.StopMusic();
-            AudioManager.instance.ChangeScene("MainMenu");
-        }
+
     }
 
     private void PlayEndAnimation()
     {
-        confetti.gameObject.SetActive(true);
-        confetti2.gameObject.SetActive(true);
-        confetti3.gameObject.SetActive(true);
-        confetti4.gameObject.SetActive(true);
+        if (confetti != null)
+            confetti.gameObject.SetActive(true);
+        if (confetti2 != null)
+            confetti2.gameObject.SetActive(true);
+        if(confetti3 != null)
+            confetti3.gameObject.SetActive(true);
+        if (confetti4 != null)
+            confetti4.gameObject.SetActive(true);
         
-        if(totalScore < 2000)
-        {
-            PlayBadEnd();
-        }
-        else if(totalScore > 2001 && totalScore < 5000)
-        {
-            PlayMiddleEnd();
-        }
-        else
-        {
-            PlayGoodEnd();
-        }
+        //if(totalScore < 2000)
+        //{
+        //    PlayBadEnd();
+        //}
+        //else if(totalScore > 2001 && totalScore < 5000)
+        //{
+        //    PlayMiddleEnd();
+        //}
+        //else
+        //{
+        //    PlayGoodEnd();
+        //}
     }
 
     private void PlayGoodEnd()
