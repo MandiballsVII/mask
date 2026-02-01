@@ -14,4 +14,12 @@ public class ArrowMovement : MonoBehaviour
     {
         transform.Translate(Vector2.right * speed * Time.deltaTime, Space.World);
     }
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag("CentralBox"))
+        {
+            ArrowEvents.OnArrowDestroyed?.Invoke();
+            Destroy(gameObject);
+        }
+    }
 }

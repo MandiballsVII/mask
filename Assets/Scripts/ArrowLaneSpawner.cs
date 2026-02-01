@@ -22,7 +22,12 @@ public class ArrowLaneSpawner : MonoBehaviour
         data.direction = lookingDirection;
 
         ArrowMovement movement = arrow.GetComponent<ArrowMovement>();
-        movement.Init(travelDuration, centralBox.position.x);
+        Collider2D boxCollider = centralBox.GetComponent<Collider2D>();
+
+        float destroyX = boxCollider.bounds.min.x - 0.5f;
+        // borde izquierdo REAL del trigger en world units
+
+        movement.Init(travelDuration, destroyX);
 
         ArrowInputState.SetActiveArrow(data);
 
@@ -48,13 +53,14 @@ public class ArrowLaneSpawner : MonoBehaviour
     {
         return lookingDirection switch
         {
-            lookingDirection.Left => Color.red,
-            lookingDirection.Up => Color.yellow,
-            lookingDirection.Right => Color.magenta,
-            lookingDirection.Down => Color.blue,
+            lookingDirection.Up => Color.red,        // Ira
+            lookingDirection.Left => Color.yellow,   // Felicidad
+            lookingDirection.Down => Color.blue,     // Tristeza
+            lookingDirection.Right => Color.magenta, // Miedo
             _ => Color.white
         };
     }
+
 
 }
 public enum lookingDirection
