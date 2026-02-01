@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: bdcacc438c4ddae48b29a42800fbedf5
+guid: cd5d9e2d5da39b94ab1babd8e860ec1a
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1837621067984027393
-    second: Frame 2 Gente 638x391_0
+      213: -5077513904239319416
+    second: Mesa Dj 1292x220_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Frame 2 Gente 638x391_0
+      name: Mesa Dj 1292x220_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 638
-        height: 327
+        width: 1292
+        height: 220
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 10f36fc00aa808910800000000000000
-      internalID: 1837621067984027393
+      spriteID: 88665b3810c0989b0800000000000000
+      internalID: -5077513904239319416
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Frame 2 Gente 638x391_0: 1837621067984027393
+      Mesa Dj 1292x220_0: -5077513904239319416
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

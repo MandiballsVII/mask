@@ -1,10 +1,13 @@
 fileFormatVersion: 2
-guid: bdcacc438c4ddae48b29a42800fbedf5
+guid: 24a4da47d1601ab459205acb6f4cabdb
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1837621067984027393
-    second: Frame 2 Gente 638x391_0
+      213: -5900197900602996816
+    second: Cables Arriba 2560x223_0
+  - first:
+      213: 4006773928733299809
+    second: Cables Arriba 2560x223_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +116,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Frame 2 Gente 638x391_0
+      name: Cables Arriba 2560x223_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
-        width: 638
-        height: 327
+        y: 6
+        width: 663
+        height: 217
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +131,30 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 10f36fc00aa808910800000000000000
-      internalID: 1837621067984027393
+      spriteID: 0b78d0e15494e1ea0800000000000000
+      internalID: -5900197900602996816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cables Arriba 2560x223_1
+      rect:
+        serializedVersion: 2
+        x: 1864
+        y: 0
+        width: 696
+        height: 223
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 164d17dc8abea9730800000000000000
+      internalID: 4006773928733299809
       vertices: []
       indices: 
       edges: []
@@ -148,7 +173,8 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Frame 2 Gente 638x391_0: 1837621067984027393
+      Cables Arriba 2560x223_0: -5900197900602996816
+      Cables Arriba 2560x223_1: 4006773928733299809
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

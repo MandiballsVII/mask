@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: bdcacc438c4ddae48b29a42800fbedf5
+guid: b71fa6d080de3404bbbb150470e0f12a
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1837621067984027393
-    second: Frame 2 Gente 638x391_0
+      213: -5622217658861538637
+    second: Glitch1_572x435_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Frame 2 Gente 638x391_0
+      name: Glitch1_572x435_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 638
-        height: 327
+        width: 572
+        height: 435
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 10f36fc00aa808910800000000000000
-      internalID: 1837621067984027393
+      spriteID: 3b231a9b3ded9f1b0800000000000000
+      internalID: -5622217658861538637
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Frame 2 Gente 638x391_0: 1837621067984027393
+      Glitch1_572x435_0: -5622217658861538637
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

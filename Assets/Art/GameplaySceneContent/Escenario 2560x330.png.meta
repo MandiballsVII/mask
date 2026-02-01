@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: bdcacc438c4ddae48b29a42800fbedf5
+guid: 2c62d5164d3198d48b113799f0f3da1f
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1837621067984027393
-    second: Frame 2 Gente 638x391_0
+      213: -3197459477019845801
+    second: Escenario 2560x330_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Frame 2 Gente 638x391_0
+      name: Escenario 2560x330_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 638
-        height: 327
+        width: 2560
+        height: 308
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 10f36fc00aa808910800000000000000
-      internalID: 1837621067984027393
+      spriteID: 75b9688eb8750a3d0800000000000000
+      internalID: -3197459477019845801
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Frame 2 Gente 638x391_0: 1837621067984027393
+      Escenario 2560x330_0: -3197459477019845801
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

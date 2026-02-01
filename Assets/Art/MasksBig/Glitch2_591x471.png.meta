@@ -1,10 +1,16 @@
 fileFormatVersion: 2
-guid: bdcacc438c4ddae48b29a42800fbedf5
+guid: 6a720df630969654aaffc549b2141199
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1837621067984027393
-    second: Frame 2 Gente 638x391_0
+      213: 943580644384042227
+    second: Glitch2_591x471_0
+  - first:
+      213: 9087075028400680471
+    second: Glitch2_591x471_1
+  - first:
+      213: 1087341342255859503
+    second: Glitch2_591x471_2
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +119,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Frame 2 Gente 638x391_0
+      name: Glitch2_591x471_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
-        width: 638
-        height: 327
+        y: 7
+        width: 591
+        height: 464
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +134,52 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 10f36fc00aa808910800000000000000
-      internalID: 1837621067984027393
+      spriteID: 3fce175c895481d00800000000000000
+      internalID: 943580644384042227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glitch2_591x471_1
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 458
+        width: 63
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71e252bc796cb1e70800000000000000
+      internalID: 9087075028400680471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glitch2_591x471_2
+      rect:
+        serializedVersion: 2
+        x: 301
+        y: 0
+        width: 22
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f27c1c69033071f00800000000000000
+      internalID: 1087341342255859503
       vertices: []
       indices: 
       edges: []
@@ -148,7 +198,9 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Frame 2 Gente 638x391_0: 1837621067984027393
+      Glitch2_591x471_0: 943580644384042227
+      Glitch2_591x471_1: 9087075028400680471
+      Glitch2_591x471_2: 1087341342255859503
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
