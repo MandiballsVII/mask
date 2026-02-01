@@ -1,5 +1,6 @@
 using UnityEngine;
 using TMPro;
+using System;
 
 public class ScoreManager : MonoBehaviour
 {
@@ -14,6 +15,8 @@ public class ScoreManager : MonoBehaviour
     public TextMeshProUGUI scoreText;
     public TextMeshProUGUI comboText;
 
+    public float gameTime = 145f;
+
     public void Awake() {
         if (instance == null) {
             instance = this;
@@ -22,6 +25,46 @@ public class ScoreManager : MonoBehaviour
         }
      
     }
+    private void Update()
+    {
+        gameTime -= Time.deltaTime;
+        if(gameTime < 0)
+        {
+            PlayEndAnimation();
+        }
+    }
+
+    private void PlayEndAnimation()
+    {
+        if(totalScore < 2000)
+        {
+            PlayBadEnd();
+        }
+        else if(totalScore > 2001 && totalScore < 5000)
+        {
+            PlayMiddleEnd();
+        }
+        else
+        {
+            PLayGoodEnd();
+        }
+    }
+
+    private void PLayGoodEnd()
+    {
+        throw new NotImplementedException();
+    }
+
+    private void PlayMiddleEnd()
+    {
+        throw new NotImplementedException();
+    }
+
+    private void PlayBadEnd()
+    {
+        throw new NotImplementedException();
+    }
+
     public void AddScore(int pointsBase) {
             actualCombo++;
 

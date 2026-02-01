@@ -155,7 +155,7 @@ MonoBehaviour:
   StringsBanks:
   - {fileID: 3794513509569901922}
   cacheVersion: 131858
-  cacheTime: 639054813505327491
+  cacheTime: 639055425735263948
   SerializableEventsDict:
   - key: event:/Music/MainMenu
     index: 0
@@ -192,10 +192,10 @@ MonoBehaviour:
   Path: Assets/FMOD_Banks/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 639054813505327491
+  lastModified: 639055425735263948
   FileSizes:
   - Name: Desktop
-    Value: 2209920
+    Value: 4350720
   Exists: 1
 --- !u!114 &2742891932733151619
 MonoBehaviour:
@@ -244,13 +244,13 @@ MonoBehaviour:
     Data4: -2072594136
   Banks:
   - {fileID: 1457151580863108596}
-  IsStream: 0
+  IsStream: 1
   Is3D: 0
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 0
+  Length: 170000
 --- !u!114 &3741819727011164189
 MonoBehaviour:
   m_ObjectHideFlags: 0
