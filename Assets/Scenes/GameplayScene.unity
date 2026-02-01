@@ -1389,10 +1389,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 80314a894d8686743a3f7fec7af96d03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  leftSpawner: {fileID: 2054748806}
-  downSpawner: {fileID: 2054748807}
-  upSpawner: {fileID: 2054748804}
-  rightSpawner: {fileID: 2054748806}
+  arrows:
+  - lane: {fileID: 2054748805}
+    startTime: 0
+    endTime: 36
+  - lane: {fileID: 2054748807}
+    startTime: 38
+    endTime: 60
+  - lane: {fileID: 2054748804}
+    startTime: 62
+    endTime: 102
+  - lane: {fileID: 2054748806}
+    startTime: 104
+    endTime: 144
 --- !u!4 &1033310084
 Transform:
   m_ObjectHideFlags: 0
