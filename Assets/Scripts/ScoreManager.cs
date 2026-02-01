@@ -15,7 +15,12 @@ public class ScoreManager : MonoBehaviour
     public TextMeshProUGUI scoreText;
     public TextMeshProUGUI comboText;
 
-    public float gameTime = 145f;
+    public float gameTime = 3f;
+
+    public ParticleSystem confetti;
+    public ParticleSystem confetti2;
+    public ParticleSystem confetti3;
+    public ParticleSystem confetti4;
 
     public void Awake() {
         if (instance == null) {
@@ -23,10 +28,12 @@ public class ScoreManager : MonoBehaviour
         } else {
            Destroy(gameObject); 
         }
-     
+        //confetti.gameObject.SetActive(true);
     }
     private void Update()
     {
+        //confetti.Play();
+        print(gameTime);
         gameTime -= Time.deltaTime;
         if(gameTime < 0)
         {
@@ -36,6 +43,10 @@ public class ScoreManager : MonoBehaviour
 
     private void PlayEndAnimation()
     {
+        confetti.gameObject.SetActive(true);
+        confetti2.gameObject.SetActive(true);
+        confetti3.gameObject.SetActive(true);
+        confetti4.gameObject.SetActive(true);
         if(totalScore < 2000)
         {
             PlayBadEnd();
@@ -46,11 +57,11 @@ public class ScoreManager : MonoBehaviour
         }
         else
         {
-            PLayGoodEnd();
+            PlayGoodEnd();
         }
     }
 
-    private void PLayGoodEnd()
+    private void PlayGoodEnd()
     {
         throw new NotImplementedException();
     }
