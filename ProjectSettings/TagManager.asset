@@ -47,6 +47,12 @@ TagManager:
   - name: GameplayBG
     uniqueID: 2346313269
     locked: 0
+  - name: People
+    uniqueID: 630353755
+    locked: 0
+  - name: GmeplaySpace
+    uniqueID: 2138969617
+    locked: 0
   - name: LineGameplay
     uniqueID: 4442891
     locked: 0
