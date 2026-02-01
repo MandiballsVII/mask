@@ -30,6 +30,10 @@ public class ScoreManager : MonoBehaviour
         }
         //confetti.gameObject.SetActive(true);
     }
+    private void Start()
+    {
+        AudioManager.instance.InitializeMusic(FMOD_Events.instance.GameplayMusic);
+    }
     private void Update()
     {
         //confetti.Play();
@@ -39,6 +43,11 @@ public class ScoreManager : MonoBehaviour
         {
             PlayEndAnimation();
         }
+        else if(gameTime < -10f)
+        {
+            AudioManager.instance.StopMusic();
+            AudioManager.instance.ChangeScene("MainMenu");
+        }
     }
 
     private void PlayEndAnimation()
@@ -47,6 +56,7 @@ public class ScoreManager : MonoBehaviour
         confetti2.gameObject.SetActive(true);
         confetti3.gameObject.SetActive(true);
         confetti4.gameObject.SetActive(true);
+        
         if(totalScore < 2000)
         {
             PlayBadEnd();
