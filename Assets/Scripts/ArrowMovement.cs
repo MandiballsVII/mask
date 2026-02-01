@@ -16,8 +16,11 @@ public class ArrowMovement : MonoBehaviour
     }
     void OnTriggerEnter2D(Collider2D other)
     {
+        Debug.Log("Trigger con: " + other.name);
+
         if (other.CompareTag("CentralBox"))
         {
+            Debug.Log("CentralBox detectado");
             ArrowEvents.OnArrowDestroyed?.Invoke();
             Destroy(gameObject);
         }

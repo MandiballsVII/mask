@@ -27,7 +27,7 @@ public class BigMaskController : MonoBehaviour
             lookingDirection.Left => 1,   // Felicidad
             lookingDirection.Down => 2,   // Tristeza
             lookingDirection.Right => 3,  // Miedo
-            _ => 0
+            _ => 4
         };
 
         animator.SetInteger(EmotionParam, emotion);
@@ -35,6 +35,7 @@ public class BigMaskController : MonoBehaviour
 
     void OnArrowDestroyed()
     {
-        animator.SetTrigger(GlitchTrigger);
+        print("En arrow destroy");
+        animator.SetInteger(EmotionParam, 4);
     }
 }

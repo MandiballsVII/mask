@@ -2933,6 +2933,10 @@ PrefabInstance:
       propertyPath: arrowHoldDetector
       value: 
       objectReference: {fileID: 312255253}
+    - target: {fileID: 3275031013875001638, guid: 08807c24c3a4ffd40839e994c3336afd, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     - target: {fileID: 3306237984815484305, guid: 08807c24c3a4ffd40839e994c3336afd, type: 3}
       propertyPath: arrowHoldDetector
       value: 
@@ -2985,6 +2989,10 @@ PrefabInstance:
       propertyPath: arrowHoldDetector
       value: 
       objectReference: {fileID: 312255253}
+    - target: {fileID: 6843174293972282309, guid: 08807c24c3a4ffd40839e994c3336afd, type: 3}
+      propertyPath: m_TagString
+      value: CentralBox
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
