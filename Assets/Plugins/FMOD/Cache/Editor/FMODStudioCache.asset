@@ -15,10 +15,10 @@ MonoBehaviour:
   Path: Assets/FMOD_Banks/Desktop/SoundFx.bank
   Name: SoundFx
   StudioPath: bank:/SoundFx
-  lastModified: 639055446055986919
+  lastModified: 639055522585376008
   FileSizes:
   - Name: Desktop
-    Value: 4572
+    Value: 115648
   Exists: 1
 --- !u!114 &-5719642503546753422
 MonoBehaviour:
@@ -47,33 +47,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 152000
---- !u!114 &-2365630849538757948
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SoundFX/X2
-  m_EditorClassIdentifier: 
-  Path: event:/SoundFX/X2
-  Guid:
-    Data1: -530380182
-    Data2: 1149025112
-    Data3: 167714718
-    Data4: 832056216
-  Banks:
-  - {fileID: -5952498440760632828}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 0
 --- !u!114 &-1762530592638933508
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -94,33 +67,6 @@ MonoBehaviour:
   - Name: Desktop
     Value: 506
   Exists: 1
---- !u!114 &-1676164218222293712
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SoundFX/X3
-  m_EditorClassIdentifier: 
-  Path: event:/SoundFX/X3
-  Guid:
-    Data1: 764911919
-    Data2: 1098897036
-    Data3: 254943886
-    Data4: 1069543014
-  Banks:
-  - {fileID: -5952498440760632828}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 0
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -143,19 +89,15 @@ MonoBehaviour:
   - {fileID: 3066516130572655779}
   - {fileID: 7881353610275899240}
   - {fileID: 7582951886375921463}
-  - {fileID: -1676164218222293712}
-  - {fileID: 7754849443380482229}
-  - {fileID: -2365630849538757948}
-  - {fileID: 3741819727011164189}
   - {fileID: 2742891932733151619}
-  - {fileID: 7891635750615802143}
+  - {fileID: 6947335259028033983}
   EditorParameters: []
   MasterBanks:
   - {fileID: 1457151580863108596}
   StringsBanks:
   - {fileID: 3794513509569901922}
   cacheVersion: 131858
-  cacheTime: 639055446055986919
+  cacheTime: 639055522585376008
   SerializableEventsDict:
   - key: event:/Music/MainMenu
     index: 0
@@ -165,18 +107,10 @@ MonoBehaviour:
     index: 2
   - key: event:/SoundFX/LoseCombo
     index: 3
-  - key: event:/SoundFX/X3
-    index: 4
-  - key: event:/SoundFX/Metronome
-    index: 5
-  - key: event:/SoundFX/X2
-    index: 6
-  - key: event:/SoundFX/X4
-    index: 7
   - key: event:/SoundFX/ButtonConfirm
-    index: 8
-  - key: event:/SoundFX/X5
-    index: 9
+    index: 4
+  - key: event:/SoundFX/NewCombo
+    index: 5
 --- !u!114 &1457151580863108596
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -192,7 +126,7 @@ MonoBehaviour:
   Path: Assets/FMOD_Banks/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 639055446055643831
+  lastModified: 639055522584223444
   FileSizes:
   - Name: Desktop
     Value: 4350720
@@ -251,33 +185,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 170000
---- !u!114 &3741819727011164189
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SoundFX/X4
-  m_EditorClassIdentifier: 
-  Path: event:/SoundFX/X4
-  Guid:
-    Data1: -1554420342
-    Data2: 1278297917
-    Data3: 855589250
-    Data4: -1114891151
-  Banks:
-  - {fileID: -5952498440760632828}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 0
 --- !u!114 &3794513509569901922
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -293,11 +200,38 @@ MonoBehaviour:
   Path: Assets/FMOD_Banks/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 639055446055668973
+  lastModified: 639055522584238520
   FileSizes:
   - Name: Desktop
-    Value: 1342
+    Value: 1200
   Exists: 1
+--- !u!114 &6947335259028033983
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SoundFX/NewCombo
+  m_EditorClassIdentifier: 
+  Path: event:/SoundFX/NewCombo
+  Guid:
+    Data1: 1684321808
+    Data2: 1304845777
+    Data3: -983737432
+    Data4: 1474000042
+  Banks:
+  - {fileID: -5952498440760632828}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &7582951886375921463
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -325,33 +259,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
---- !u!114 &7754849443380482229
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SoundFX/Metronome
-  m_EditorClassIdentifier: 
-  Path: event:/SoundFX/Metronome
-  Guid:
-    Data1: -183001273
-    Data2: 1076872300
-    Data3: -1118659669
-    Data4: -1767320838
-  Banks:
-  - {fileID: -5952498440760632828}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 0
 --- !u!114 &7881353610275899240
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -370,33 +277,6 @@ MonoBehaviour:
     Data2: 1177756683
     Data3: 2132824221
     Data4: -1840448918
-  Banks:
-  - {fileID: -5952498440760632828}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 0
---- !u!114 &7891635750615802143
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SoundFX/X5
-  m_EditorClassIdentifier: 
-  Path: event:/SoundFX/X5
-  Guid:
-    Data1: 2114752511
-    Data2: 1101842258
-    Data3: -1747273546
-    Data4: 1065953425
   Banks:
   - {fileID: -5952498440760632828}
   IsStream: 0

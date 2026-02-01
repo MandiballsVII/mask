@@ -21,4 +21,9 @@ public class ButtonManager : MonoBehaviour
     {
         AudioManager.instance.StopMusic();
     }
+
+    public void PlayButtonSFX()
+    {
+        AudioManager.instance.PlayOneShot(FMOD_Events.instance.ButtonSounds);
+    }
 }
