@@ -43,7 +43,7 @@ public class ScoreManager : MonoBehaviour
         {
             PlayEndAnimation();
         }
-        else if(gameTime < -10f)
+        if(gameTime < -10f)
         {
             AudioManager.instance.StopMusic();
             AudioManager.instance.ChangeScene("MainMenu");
