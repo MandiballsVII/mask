@@ -1689,6 +1689,7 @@ MonoBehaviour:
   multiplicator: 1
   scoreText: {fileID: 1424843130}
   comboText: {fileID: 1360658353}
+  gameTime: 145
 --- !u!4 &1812511826
 Transform:
   m_ObjectHideFlags: 0
