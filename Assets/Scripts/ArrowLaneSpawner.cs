@@ -25,6 +25,12 @@ public class ArrowLaneSpawner : MonoBehaviour
         movement.Init(travelDuration, centralBox.position.x);
 
         ArrowInputState.SetActiveArrow(data);
+
+        ArrowInputState.SetActiveArrow(data);
+
+        // Avisamos al mundo
+        ArrowEvents.OnArrowChanged?.Invoke(lookingDirection);
+        print("Final de Arrow Spawn");
     }
 
 
