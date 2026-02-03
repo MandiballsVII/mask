@@ -48,6 +48,9 @@ TagManager:
   - name: GameplayBG
     uniqueID: 2346313269
     locked: 0
+  - name: LightSticks
+    uniqueID: 1661579887
+    locked: 0
   - name: People
     uniqueID: 630353755
     locked: 0
@@ -68,6 +71,9 @@ TagManager:
     locked: 0
   - name: FX
     uniqueID: 1803522931
+    locked: 0
+  - name: UI
+    uniqueID: 1374277677
     locked: 0
   m_RenderingLayers:
   - Default

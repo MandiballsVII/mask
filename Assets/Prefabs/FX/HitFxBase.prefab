@@ -26,14 +26,14 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1387167335339863946}
   serializedVersion: 2
-  m_LocalRotation: {x: -1, y: 0, z: 0, w: 0}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 7384199259772905508}
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: -180, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!198 &9151657953708462462
 ParticleSystem:
   m_ObjectHideFlags: 0
@@ -665,7 +665,7 @@ ParticleSystem:
   ShapeModule:
     serializedVersion: 6
     enabled: 1
-    type: 4
+    type: 18
     angle: 25
     length: 5
     boxThickness: {x: 0, y: 0, z: 0}
@@ -673,7 +673,7 @@ ParticleSystem:
     donutRadius: 0.2
     m_Position: {x: 0, y: 0, z: 0}
     m_Rotation: {x: 0, y: 0, z: 0}
-    m_Scale: {x: 1, y: 1, z: 0.5}
+    m_Scale: {x: 1, y: 0.3, z: 0.5}
     placementMode: 0
     m_MeshMaterialIndex: 0
     m_MeshNormalOffset: 0
@@ -3887,7 +3887,7 @@ ParticleSystem:
       properties: 0
       emitProbability: 1
   LightsModule:
-    enabled: 1
+    enabled: 0
     ratio: 0.08
     light: {fileID: 0}
     randomDistribution: 1
@@ -4867,7 +4867,7 @@ ParticleSystemRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1803522931
-  m_SortingLayer: 6
+  m_SortingLayer: 9
   m_SortingOrder: 0
   m_RenderMode: 0
   m_MeshDistribution: 0
@@ -4922,8 +4922,32 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4292671032416545809, guid: 6d3332eb96d680e448cc64b8eceecd3b, type: 3}
+      propertyPath: m_Intensity
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4292671032416545809, guid: 6d3332eb96d680e448cc64b8eceecd3b, type: 3}
       propertyPath: m_ApplyToSortingLayers.Array.size
-      value: 7
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4292671032416545809, guid: 6d3332eb96d680e448cc64b8eceecd3b, type: 3}
+      propertyPath: 'm_ApplyToSortingLayers.Array.data[1]'
+      value: 4442891
+      objectReference: {fileID: 0}
+    - target: {fileID: 4292671032416545809, guid: 6d3332eb96d680e448cc64b8eceecd3b, type: 3}
+      propertyPath: 'm_ApplyToSortingLayers.Array.data[2]'
+      value: 213489927
+      objectReference: {fileID: 0}
+    - target: {fileID: 4292671032416545809, guid: 6d3332eb96d680e448cc64b8eceecd3b, type: 3}
+      propertyPath: 'm_ApplyToSortingLayers.Array.data[3]'
+      value: 1109851703
+      objectReference: {fileID: 0}
+    - target: {fileID: 4292671032416545809, guid: 6d3332eb96d680e448cc64b8eceecd3b, type: 3}
+      propertyPath: 'm_ApplyToSortingLayers.Array.data[4]'
+      value: -518876609
+      objectReference: {fileID: 0}
+    - target: {fileID: 4292671032416545809, guid: 6d3332eb96d680e448cc64b8eceecd3b, type: 3}
+      propertyPath: 'm_ApplyToSortingLayers.Array.data[5]'
+      value: 1803522931
       objectReference: {fileID: 0}
     - target: {fileID: 4292671032416545809, guid: 6d3332eb96d680e448cc64b8eceecd3b, type: 3}
       propertyPath: 'm_ApplyToSortingLayers.Array.data[6]'
@@ -4943,19 +4967,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5214023525617468478, guid: 6d3332eb96d680e448cc64b8eceecd3b, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.7071068
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5214023525617468478, guid: 6d3332eb96d680e448cc64b8eceecd3b, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.7071068
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5214023525617468478, guid: 6d3332eb96d680e448cc64b8eceecd3b, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5214023525617468478, guid: 6d3332eb96d680e448cc64b8eceecd3b, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5214023525617468478, guid: 6d3332eb96d680e448cc64b8eceecd3b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
