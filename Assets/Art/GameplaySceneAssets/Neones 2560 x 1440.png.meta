@@ -1,0 +1,611 @@
+fileFormatVersion: 2
+guid: f8b7617921595ee4da65312e375d9c94
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6685268570415820745
+    second: Neones 2560 x 1440_0
+  - first:
+      213: -6678697631110315774
+    second: Neones 2560 x 1440_1
+  - first:
+      213: 6270042411163736205
+    second: Neones 2560 x 1440_2
+  - first:
+      213: -6834041272947306563
+    second: Neones 2560 x 1440_3
+  - first:
+      213: 2947699820999132395
+    second: Neones 2560 x 1440_4
+  - first:
+      213: -2973241176220138011
+    second: Neones 2560 x 1440_5
+  - first:
+      213: 2077027502106241870
+    second: Neones 2560 x 1440_6
+  - first:
+      213: 6210551192726839228
+    second: Neones 2560 x 1440_7
+  - first:
+      213: -9183129165787886032
+    second: Neones 2560 x 1440_8
+  - first:
+      213: 5422519992705462756
+    second: Neones 2560 x 1440_9
+  - first:
+      213: -5343808021491639137
+    second: Neones 2560 x 1440_10
+  - first:
+      213: 318691093486382926
+    second: Neones 2560 x 1440_11
+  - first:
+      213: -9112129041733040925
+    second: Neones 2560 x 1440_12
+  - first:
+      213: 6949623304670086022
+    second: Neones 2560 x 1440_13
+  - first:
+      213: 351316789691311930
+    second: Neones 2560 x 1440_14
+  - first:
+      213: -2727346815477813860
+    second: Neones 2560 x 1440_15
+  - first:
+      213: 8420752663487741894
+    second: Neones 2560 x 1440_16
+  - first:
+      213: -6387376611546392050
+    second: Neones 2560 x 1440_17
+  - first:
+      213: 6100462862022225054
+    second: Neones 2560 x 1440_18
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 2
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 4
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Neones 2560 x 1440_0
+      rect:
+        serializedVersion: 2
+        x: 1104
+        y: 1356
+        width: 107
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9cfe7bf3858d6cc50800000000000000
+      internalID: 6685268570415820745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neones 2560 x 1440_1
+      rect:
+        serializedVersion: 2
+        x: 1229
+        y: 1358
+        width: 73
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2014d67c3ef7053a0800000000000000
+      internalID: -6678697631110315774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neones 2560 x 1440_2
+      rect:
+        serializedVersion: 2
+        x: 1317
+        y: 1359
+        width: 76
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d885c045a5aa30750800000000000000
+      internalID: 6270042411163736205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neones 2560 x 1440_3
+      rect:
+        serializedVersion: 2
+        x: 1405
+        y: 1358
+        width: 73
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dbf0e99abab9821a0800000000000000
+      internalID: -6834041272947306563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neones 2560 x 1440_4
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 1254
+        width: 48
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be4c22f9e5558e820800000000000000
+      internalID: 2947699820999132395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neones 2560 x 1440_5
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 1262
+        width: 41
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e585d337ececb6d0800000000000000
+      internalID: -2973241176220138011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neones 2560 x 1440_6
+      rect:
+        serializedVersion: 2
+        x: 2202
+        y: 1262
+        width: 40
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4b62c3328513dc10800000000000000
+      internalID: 2077027502106241870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neones 2560 x 1440_7
+      rect:
+        serializedVersion: 2
+        x: 2297
+        y: 1254
+        width: 48
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cbf9cd5a76f403650800000000000000
+      internalID: 6210551192726839228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neones 2560 x 1440_8
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 1027
+        width: 29
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03e0fa29da8fe8080800000000000000
+      internalID: -9183129165787886032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neones 2560 x 1440_9
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 1011
+        width: 22
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e1b9a02439a04b40800000000000000
+      internalID: 5422519992705462756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neones 2560 x 1440_10
+      rect:
+        serializedVersion: 2
+        x: 2174
+        y: 1012
+        width: 21
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9c9b1bcaeaf6d5b0800000000000000
+      internalID: -5343808021491639137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neones 2560 x 1440_11
+      rect:
+        serializedVersion: 2
+        x: 2337
+        y: 1028
+        width: 26
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4f265c6cd73c6400800000000000000
+      internalID: 318691093486382926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neones 2560 x 1440_12
+      rect:
+        serializedVersion: 2
+        x: 821
+        y: 638
+        width: 100
+        height: 167
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e44bf72ae63b8180800000000000000
+      internalID: -9112129041733040925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neones 2560 x 1440_13
+      rect:
+        serializedVersion: 2
+        x: 872
+        y: 718
+        width: 99
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68303ad2395027060800000000000000
+      internalID: 6949623304670086022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neones 2560 x 1440_14
+      rect:
+        serializedVersion: 2
+        x: 952
+        y: 678
+        width: 138
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a376e2542c020e400800000000000000
+      internalID: 351316789691311930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neones 2560 x 1440_15
+      rect:
+        serializedVersion: 2
+        x: 1244
+        y: 676
+        width: 360
+        height: 129
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9de62c7584862ad0800000000000000
+      internalID: -2727346815477813860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neones 2560 x 1440_16
+      rect:
+        serializedVersion: 2
+        x: 1583
+        y: 717
+        width: 97
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6cf7c90bee58cd470800000000000000
+      internalID: 8420752663487741894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neones 2560 x 1440_17
+      rect:
+        serializedVersion: 2
+        x: 1632
+        y: 642
+        width: 105
+        height: 166
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0a932640da7b57a0800000000000000
+      internalID: -6387376611546392050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neones 2560 x 1440_18
+      rect:
+        serializedVersion: 2
+        x: 977
+        y: 656
+        width: 23
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9c2c40c6a239a450800000000000000
+      internalID: 6100462862022225054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Neones 2560 x 1440_0: 6685268570415820745
+      Neones 2560 x 1440_1: -6678697631110315774
+      Neones 2560 x 1440_10: -5343808021491639137
+      Neones 2560 x 1440_11: 318691093486382926
+      Neones 2560 x 1440_12: -9112129041733040925
+      Neones 2560 x 1440_13: 6949623304670086022
+      Neones 2560 x 1440_14: 351316789691311930
+      Neones 2560 x 1440_15: -2727346815477813860
+      Neones 2560 x 1440_16: 8420752663487741894
+      Neones 2560 x 1440_17: -6387376611546392050
+      Neones 2560 x 1440_18: 6100462862022225054
+      Neones 2560 x 1440_2: 6270042411163736205
+      Neones 2560 x 1440_3: -6834041272947306563
+      Neones 2560 x 1440_4: 2947699820999132395
+      Neones 2560 x 1440_5: -2973241176220138011
+      Neones 2560 x 1440_6: 2077027502106241870
+      Neones 2560 x 1440_7: 6210551192726839228
+      Neones 2560 x 1440_8: -9183129165787886032
+      Neones 2560 x 1440_9: 5422519992705462756
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
