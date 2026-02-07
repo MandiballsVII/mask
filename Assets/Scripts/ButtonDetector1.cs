@@ -44,6 +44,7 @@ public class ButtonDetector1 : MonoBehaviour
 
     private void OnButtonPressed(InputAction.CallbackContext ctx)
     {
+        if (PauseManager.instance.IsPaused) return;
         spriteRenderer.sprite = buttonDown;
 
         // 1 Nota presente
@@ -81,6 +82,7 @@ public class ButtonDetector1 : MonoBehaviour
 
     private void OnButtonReleased(InputAction.CallbackContext ctx)
     {
+        if (PauseManager.instance.IsPaused) return;
         spriteRenderer.sprite = buttonUp;
     }
 

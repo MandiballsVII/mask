@@ -68,7 +68,15 @@ public class AudioManager : MonoBehaviour
         musicEventInstance = CreateInstance(musicEventReference);
         musicEventInstance.start();
     }
-    
+    public void PauseMusic()
+    {
+        musicEventInstance.setPaused(true);
+    }
+
+    public void ResumeMusic()
+    {
+        musicEventInstance.setPaused(false);
+    }
     public void StopMusic()
     {
         musicEventInstance.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);

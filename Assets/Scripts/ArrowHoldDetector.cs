@@ -10,6 +10,7 @@ public class ArrowHoldDetector : MonoBehaviour
 
     public bool IsHolding(lookingDirection direction)
     {
+        if (PauseManager.instance.IsPaused) return false;
         return direction switch
         {
             lookingDirection.Left => left.action.IsPressed(),
