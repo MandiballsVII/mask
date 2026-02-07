@@ -73,6 +73,7 @@ public class ScoreManager : MonoBehaviour
         if (gameTime <= 0 && !endStarted)
         {
             endStarted = true;
+            PauseManager.instance.SetPauseEnabled(false);
             PlayEndAnimation();
         }
 

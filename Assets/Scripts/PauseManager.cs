@@ -13,6 +13,8 @@ public class PauseManager : MonoBehaviour
     public bool isPaused = false;
     public GameObject firstButton;
 
+    private bool canPause = true;
+
     // -------------------------------------------------
 
     private void Awake()
@@ -35,20 +37,19 @@ public class PauseManager : MonoBehaviour
     }
     private void TogglePause(InputAction.CallbackContext ctx)
     {
+        if (!canPause) return;
+
         if (isPaused) Resume();
         else Pause();
     }
-    //private void Update()
-    //{
-    //    // Tecla ESC
-    //    if (Input.GetKeyDown(KeyCode.Escape))
-    //    {
-    //        if (isPaused)
-    //            Resume();
-    //        else
-    //            Pause();
-    //    }
-    //}
+    public void SetPauseEnabled(bool enabled)
+    {
+        canPause = enabled;
+
+        // por seguridad: si lo desactivas mientras está pausado, reanuda
+        if (!enabled && isPaused)
+            Resume();
+    }
 
     // -------------------------------------------------
     // PAUSE
