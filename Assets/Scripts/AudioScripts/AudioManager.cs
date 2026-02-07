@@ -49,7 +49,7 @@ public class AudioManager : MonoBehaviour
         masterBus.setVolume(masterVolume);
         musicBus.setVolume(musicVolume);
         sfxBus.setVolume(sfxVolume);
-        print("Audio Manager vive");
+        //print("Audio Manager vive");
     }
 
     public void PlayOneShot(EventReference sound)

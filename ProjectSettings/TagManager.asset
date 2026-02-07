@@ -8,6 +8,7 @@ TagManager:
   - Arrow
   - MaskBig
   - CentralBox
+  - FinalGas
   layers:
   - Default
   - TransparentFX

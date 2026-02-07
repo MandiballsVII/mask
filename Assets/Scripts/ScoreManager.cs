@@ -24,6 +24,13 @@ public class ScoreManager : MonoBehaviour
     public ParticleSystem confetti3;
     public ParticleSystem confetti4;
 
+    public GameObject finalGas;
+
+    public GameObject finalRock;
+
+    public GameObject dj;
+
+
     public void Awake() {
         if (instance == null) {
             instance = this;
@@ -69,34 +76,36 @@ public class ScoreManager : MonoBehaviour
             confetti3.gameObject.SetActive(true);
         if (confetti4 != null)
             confetti4.gameObject.SetActive(true);
-        
-        //if(totalScore < 2000)
-        //{
-        //    PlayBadEnd();
-        //}
-        //else if(totalScore > 2001 && totalScore < 5000)
-        //{
-        //    PlayMiddleEnd();
-        //}
-        //else
-        //{
-        //    PlayGoodEnd();
-        //}
+
+        if (totalScore < 2000)
+        {
+            PlayBadEnd();
+        }
+        else if (totalScore > 2001 && totalScore < 5000)
+        {
+            PlayMiddleEnd();
+        }
+        else
+        {
+            PlayGoodEnd();
+        }
     }
 
     private void PlayGoodEnd()
     {
-        throw new NotImplementedException();
+        finalGas.SetActive(true);
+        finalGas.GetComponent<Animator>().Play("FinalGas");
     }
 
     private void PlayMiddleEnd()
     {
-        throw new NotImplementedException();
+        finalRock.SetActive(true);
+        finalRock.GetComponent<Animator>().Play("finalRoca");
     }
 
     private void PlayBadEnd()
     {
-        throw new NotImplementedException();
+        dj.GetComponent<Dj>().EndGame();
     }
 
     public void AddScore(int pointsBase) {
