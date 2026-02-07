@@ -4,32 +4,18 @@ public class LaneSpawner : MonoBehaviour
 {
     public GameObject notePrefab;
     public Color color;
-
-    private float timer;
-
-    public float timeGap;
-
-    void Update()
-    {
-
-        timer += Time.deltaTime;
-        if (timer > timeGap)
-        {
-            Spawn();
-            timer = 0f;
-        }
-    }
+    public float travelTime = 1.5f;
+    public Transform hitPoint;
 
     public void Spawn()
     {
         GameObject note = Instantiate(notePrefab, transform.position, Quaternion.identity);
 
-        // Color
         note.GetComponent<SpriteRenderer>().color = color;
-
         note.layer = gameObject.layer;
-        timeGap = Random.Range(0, 5);
-    }
 
-    
+        float distance = Vector2.Distance(transform.position, hitPoint.position);
+
+        note.GetComponent<NoteMovement>().Initialize(distance, travelTime);
+    }
 }

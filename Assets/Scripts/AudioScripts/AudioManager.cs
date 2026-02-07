@@ -86,4 +86,9 @@ public class AudioManager : MonoBehaviour
     {
         SceneManager.LoadScene(scene);
     }
+    public float GetMusicTime()
+    {
+        musicEventInstance.getTimelinePosition(out int ms);
+        return ms / 1000f;
+    }
 }

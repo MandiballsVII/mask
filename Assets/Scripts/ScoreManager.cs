@@ -115,11 +115,11 @@ public class ScoreManager : MonoBehaviour
         if (confetti3) confetti3.gameObject.SetActive(true);
         if (confetti4) confetti4.gameObject.SetActive(true);
 
-        if (totalScore < 2000)
+        if (totalScore <= 50000)
         {
             PlayBadEnd();
         }
-        else if (totalScore > 2001 && totalScore < 5000)
+        else if (totalScore > 50000 && totalScore < 100000)
         {
             PlayMiddleEnd();
         }
