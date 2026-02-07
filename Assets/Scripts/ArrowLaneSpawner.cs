@@ -56,7 +56,7 @@ public class ArrowLaneSpawner : MonoBehaviour
             lookingDirection.Up => Color.red,        // Ira
             lookingDirection.Left => Color.yellow,   // Felicidad
             lookingDirection.Down => Color.blue,     // Tristeza
-            lookingDirection.Right => Color.magenta, // Miedo
+            lookingDirection.Right => new Color(120f / 255f, 0f, 255f / 255f, 1f), // Miedo
             _ => Color.white
         };
     }
@@ -65,5 +65,5 @@ public class ArrowLaneSpawner : MonoBehaviour
 }
 public enum lookingDirection
 {
-    Left, Right, Up, Down
+    Left, Right, Up, Down, None
 }

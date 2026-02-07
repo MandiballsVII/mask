@@ -54,6 +54,8 @@ public class ScoreManager : MonoBehaviour
     }
     private void Start()
     {
+        Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.Locked;
         if (AudioManager.instance != null)
         {
             AudioManager.instance.InitializeMusic(FMOD_Events.instance.GameplayMusic);

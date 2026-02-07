@@ -66,6 +66,9 @@ public class PauseManager : MonoBehaviour
         pauseCanvasGroup.alpha = 1f;
         pauseCanvasGroup.interactable = true;
         pauseCanvasGroup.blocksRaycasts = true;
+
+        Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.None;
     }
 
     public void Resume()
@@ -77,6 +80,9 @@ public class PauseManager : MonoBehaviour
         pauseCanvasGroup.alpha = 0f;
         pauseCanvasGroup.interactable = false;
         pauseCanvasGroup.blocksRaycasts = false;
+
+        Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.Locked;
     }
 
     public void GoToMenu()
