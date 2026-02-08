@@ -17,7 +17,6 @@ public class GameSession : MonoBehaviour
         {
             Destroy(gameObject);
         }
-        finalScore = 100000;
     }
 
     public void SetFinalScore(int score)

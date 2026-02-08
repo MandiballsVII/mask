@@ -5066,6 +5066,10 @@ PrefabInstance:
       propertyPath: hitPoint
       value: 
       objectReference: {fileID: 958458647}
+    - target: {fileID: 1352966436058382452, guid: 08807c24c3a4ffd40839e994c3336afd, type: 3}
+      propertyPath: noteSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: b880a522815db04498cbdc1eaf094ab7, type: 3}
     - target: {fileID: 1696561926084050779, guid: 08807c24c3a4ffd40839e994c3336afd, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -5162,6 +5166,10 @@ PrefabInstance:
       propertyPath: hitPoint
       value: 
       objectReference: {fileID: 958458645}
+    - target: {fileID: 6625127212802640008, guid: 08807c24c3a4ffd40839e994c3336afd, type: 3}
+      propertyPath: noteSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: dbd31bbcfc0e6884f9e0da06e68151e1, type: 3}
     - target: {fileID: 6843174293972282309, guid: 08807c24c3a4ffd40839e994c3336afd, type: 3}
       propertyPath: m_TagString
       value: CentralBox
@@ -5170,10 +5178,18 @@ PrefabInstance:
       propertyPath: hitPoint
       value: 
       objectReference: {fileID: 958458648}
+    - target: {fileID: 7225605438225022191, guid: 08807c24c3a4ffd40839e994c3336afd, type: 3}
+      propertyPath: noteSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 6c3a0be4d84968142a8c72d6de55add2, type: 3}
     - target: {fileID: 8331174844691739142, guid: 08807c24c3a4ffd40839e994c3336afd, type: 3}
       propertyPath: hitPoint
       value: 
       objectReference: {fileID: 958458646}
+    - target: {fileID: 8331174844691739142, guid: 08807c24c3a4ffd40839e994c3336afd, type: 3}
+      propertyPath: noteSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e19ad4eb25b348e4a81c26b7b87d0585, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:

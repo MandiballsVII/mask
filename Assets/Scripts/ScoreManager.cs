@@ -38,6 +38,9 @@ public class ScoreManager : MonoBehaviour
     private float endTimer = 0f;
     private bool endStarted = false;
 
+    private bool combo20 = false;
+    private bool combo10 = false;
+
     public void Awake()
     {
         if (instance == null)
@@ -87,7 +90,7 @@ public class ScoreManager : MonoBehaviour
         endTimer += Time.deltaTime;
 
         float fadeStart = 7f;
-        float sceneChangeTime = 20f;
+        float sceneChangeTime = 12f;
 
         // -------- Fade entre 10s y 12s --------
         if (endTimer >= fadeStart && endTimer <= fadeStart + fadeDuration)
@@ -163,14 +166,28 @@ public class ScoreManager : MonoBehaviour
         if (actualCombo >= 20)
         {
             multiplicator = 4;
+            if(!combo20)
+            {
+                combo20 = true;
+                combo10 = false;
+                AudioManager.instance.PlayOneShot(FMOD_Events.instance.NewCombo);
+            }
         }
         else if (actualCombo >= 10)
         {
             multiplicator = 2;
+            if (!combo10)
+            {
+                combo10 = true;
+                combo20 = false;
+                AudioManager.instance.PlayOneShot(FMOD_Events.instance.NewCombo);
+            }
         }
         else
         {
             multiplicator = 1;
+            combo20 = false;
+            combo10 = false;
         }
 
         totalScore += pointsBase * multiplicator;
