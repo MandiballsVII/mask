@@ -109,7 +109,13 @@ public class ButtonDetector1 : MonoBehaviour
         if (other.gameObject.layer != gameObject.layer)
             return;
 
-        notasEnTrigger.Remove(other.gameObject);
+        bool wasInside = notasEnTrigger.Remove(other.gameObject);
+
+        // Si todavía estaba dentro cuando salió → MISS
+        if (wasInside && !PauseManager.instance.IsPaused)
+        {
+            ScoreManager.instance?.ResetCombo();
+        }
     }
 
     // ===== FX =====

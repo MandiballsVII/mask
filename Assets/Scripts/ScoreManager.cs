@@ -106,7 +106,10 @@ public class ScoreManager : MonoBehaviour
         if (endTimer >= sceneChangeTime)
         {
             AudioManager.instance.StopMusic();
-            AudioManager.instance.ChangeScene("MainMenu");
+
+            GameSession.instance.SetFinalScore(totalScore);
+
+            AudioManager.instance.ChangeScene("Leaderboard");
         }
     }
 
@@ -121,7 +124,7 @@ public class ScoreManager : MonoBehaviour
         {
             PlayBadEnd();
         }
-        else if (totalScore > 50000 && totalScore < 100000)
+        else if (totalScore > 50000 && totalScore <= 100000)
         {
             PlayMiddleEnd();
         }

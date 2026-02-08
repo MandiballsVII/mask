@@ -10,16 +10,34 @@ public class ArrowHoldDetector : MonoBehaviour
 
     public bool IsHolding(lookingDirection direction)
     {
-        if (PauseManager.instance.IsPaused) return false;
+        if (PauseManager.instance.IsPaused)
+            return false;
+
+        bool l = left.action.IsPressed();
+        bool r = right.action.IsPressed();
+        bool u = up.action.IsPressed();
+        bool d = down.action.IsPressed();
+
+        int pressedCount = 0;
+        if (l) pressedCount++;
+        if (r) pressedCount++;
+        if (u) pressedCount++;
+        if (d) pressedCount++;
+
+        // Debe haber SOLO una pulsada
+        if (pressedCount != 1)
+            return false;
+
         return direction switch
         {
-            lookingDirection.Left => left.action.IsPressed(),
-            lookingDirection.Right => right.action.IsPressed(),
-            lookingDirection.Up => up.action.IsPressed(),
-            lookingDirection.Down => down.action.IsPressed(),
+            lookingDirection.Left => l,
+            lookingDirection.Right => r,
+            lookingDirection.Up => u,
+            lookingDirection.Down => d,
             _ => false
         };
     }
+
 
     private void OnEnable()
     {
